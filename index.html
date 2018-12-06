@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<!-- Geo 4422/5408 Project: Web Mapping-->
+<!-- Authors: Adam McKee, Mayowa Lasode, Tyler Armstrong-->
+<!-- Date 12.29.18-->
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  
+  <!--Webpage Title-->
+  <title>Crime in Austin</title>
+  
+  <!--Link to ESRI ArcGIS CSS-->
+  <link rel="stylesheet" href="https://js.arcgis.com/4.9/esri/css/main.css">
+  
+  <!--Link to Local CSS Script-->
+  <link href="style1.css" type="text/css" rel="stylesheet" />
+  
+  <!--Link to ESRI ArcGIS JavaScript-->
+  <script src="https://js.arcgis.com/4.9/"></script>
+
+  <!--Link to Local JavaScript File-->
+  <script src="mapScript.js"></script>
+  		
+</head>
+
+<body onload="myFunc()" style="margin:0;">	
+	
+	<div id="loader"></div>
+	
+<!-- creating a division in the Header for the Top Navigation panel and adding links-->
+<div class = "header"> 
+	
+		<img id="logo" src="Logo.png" alt="Crime Mappers" height="10" width="20">
+	<h1 id="titlePage">Austin Crime Data</h1>
+	<div class="topNav">
+		
+		
+
+		<nav>
+
+
+<a onMouseOver="oldColor=this.style.backgroundColor;this.style.backgroundColor='#0079be';" 
+  onMouseOut="this.style.backgroundColor=oldColor;"
+  href="aboutUs.html" class="link selectable">
+About Us</a>
+
+<a onMouseOver="oldColor=this.style.backgroundColor;this.style.backgroundColor='#0079be';" 
+  onMouseOut="this.style.backgroundColor=oldColor;"
+  href="http://www.txstate.edu" class="link selectable" target="_blank">
+Texas State University</a>
+
+<a onMouseOver="oldColor=this.style.backgroundColor;this.style.backgroundColor='#0079be';" 
+  onMouseOut="this.style.backgroundColor=oldColor;"
+  href="http://www.geo.txstate.edu" class="link selectable" target="_blank">
+Texas State Geography</a>
+
+<span></span><a onMouseOver="oldColor=this.style.backgroundColor;this.style.backgroundColor='#0079be';" 
+  onMouseOut="this.style.backgroundColor=oldColor;"
+  href="howto.html" class="link selectable">
+Help</a></span>
+
+			</nav>
+		</div>
+	</div>
+
+  <div id="viewDiv"></div>
+  <div class="esri-widget" id="optionsDiv">
+  	
+  		    <!--Add Query properties-->
+			
+ 			<h3> Austin Demographic Data</h3> 
+			<select class="esri-widget" id="attSelect">
+				<option value="MedInc16">2016 Income</option>
+				<option value="Med15" selected>2015 Income</option>
+			</select>
+			
+			<select class="esri-widget" id="signSelect">
+				<option value=">">greater than</option>
+				<option value="<">less than</option>
+			</select>
+			
+			<select class="esri-widget" id="valSelect">
+				<option value="10000">$10,000</option>
+				<option value="50000">$50,000</option>
+				<option value="100000">$100,000</option>
+				<option value="150000">$150,000</option>
+				<option value="200000">$200,000</option>
+			</select>
+			<br>
+			<br>
+			<button class="esri-widget" id="doBtn">Do Query</button>
+			<br>
+			<p><span id="printResults"></span></p>
+	</div>
+  
+  <script src="JSfile.js"></script>
+   
+
+	<div id="footer">
+       <p class="footerinformation">
+            Copyright &copy; 2018<span id="author"> <b>Austin Crime Map</b></span>All rights reserved <span id="time"><script>
+           document.write(date);     
+			   
+          </script> 
+</p>
+</div>	
+ 
+</body>
+
+</html>

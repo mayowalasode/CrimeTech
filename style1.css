@@ -1,0 +1,174 @@
+
+.header{
+	/*height: 75px;
+	width: 100%;
+	text-align: center;
+	background: #778899;
+	display: flex; 
+	text-align: center; 
+	*/
+	
+	text-align: center;
+  					margin-top: 0px;
+  					color: black; 
+					min-width: 100%;
+					background: #778899;
+					height: 75px;
+}
+/* Setting the Image tag measurements and positioning*/
+img{
+	height:200px;
+	width:200px;
+	top: 20%;
+	left: 25%;
+}
+
+/* Setting the Footer classmeasurements and positioning*/
+.footerinformation {
+  					text-align: center;
+  					margin-top: 0px;
+  					color: black; 
+					min-width: 100%;
+					background: #778899;
+height: 30px;
+		
+					}
+#logo {
+	height: 75px;
+	width: 75px;
+	display: flex;
+}
+
+body {
+  padding: 100px;
+}
+.link {
+  font: 16px/0 Tahoma, sans-serif;
+  padding: 15px 30px;
+  border: 1px solid #0079be;
+  border-radius: 4px;
+  color: #0079be;
+  text-decoration: none;
+  cursor: pointer;
+}
+.link:hover {
+  color: #fff;
+  background: #0079be;
+}
+.link.selectable > span {
+  display: inline-block;
+}
+.link.selectable.selecting > span {
+  cursor: text;
+}
+/* Setting the Footer class and paragraph tag copyright style and positioning*/
+.footer p {
+	position: absolute; 
+	bottom: -50px;
+	font-family: Verdana;
+	display: flex; 
+	left: 600px;  
+	text-align: center; 
+	display: flex;
+}
+/* Setting the Footer class name spaces and positioning*/
+#author{
+	font-weight: bold;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#time {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+/* Setting the link to department of geography spaces and positioning in Top Navigation panel*/
+
+/* Setting the spaces between links in Top Navigation panel*/
+.topNav nav a{
+	display: inline;
+	padding: 20px;
+}
+/* Setting the link to department of geography spaces and positioning in Bottom Navigation panel*/
+
+#titlePage {
+	position: relative;
+	font-size: 25px;
+	top: -90px;
+	text-align: center;
+	
+	
+}
+
+#optionsDiv {
+	background-color: #778899;
+	color: black;
+	padding: 5px;
+	width: 330px;
+	height: 125px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.topNav {
+	overflow: hidden;
+	background-color: none;
+	position: absolute;
+	top: 45px;
+	width: 100%;
+}
+
+.topNav a {
+	float: center;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px;
+	margin: 10px; 
+	text-decoration: none;
+}
+
+html,
+body,
+#viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}    
+   
+.esri-feature {
+    letter-spacing: 0em;
+    font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+    line-height: 0.80rem;
+    font-feature-settings: "liga"1, "calt"0;
+    background: #fff;
+    padding: 0.80em;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	border: 16px solid #f3f3f3;
+	border-top: 16px solid #3498db;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+			
+	}
+	100% {
+		transfrom: rotate(360deg);
+	}
+}
